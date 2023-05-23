@@ -1,3 +1,27 @@
 /*====================================================================================================*/
 //!---------COMMON BLOCKS-----------------------------------------------------------------------------*/
 /*====================================================================================================*/
+.logo {
+  font-family: inherit;
+  color: inherit;
+  font-weight: 700;
+  font-size: rem(24);
+  line-height: lh(33, 24);
+  letter-spacing: 0.01em;
+  transition: color 0.3s ease-in-out;
+
+  &_large {
+    font-size: rem(48);
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+
+  &:focus-visible {
+    outline: em(1, 24) solid var(--color-accent);
+    border-radius: em(5, 24);
+  }
+}

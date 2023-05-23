@@ -39,6 +39,8 @@
 
 body {
   font-family: $primary-family;
+  color: var(--color-light);
+  min-height: 100000px;
   /*==================================================================================================*/
 
   /*====================================================================================================*/
@@ -55,10 +57,18 @@ body {
   min-height: 100%;
   overflow: hidden;
   position: relative;
+
+  background: url('@img/main-bg.png') top center no-repeat, var(--color-dark);
 }
 
-[class*='__container'] {
-  max-width: $container;
+[class*='__container-1'] {
+  max-width: $container1;
+  padding: 0 $containerPadding;
+  margin: 0 auto;
+}
+
+[class*='__container-2'] {
+  max-width: $container2;
   padding: 0 $containerPadding;
   margin: 0 auto;
 }
