@@ -1,12 +1,13 @@
 .hero {
-  padding: rem(287) 0 rem(731);
+  padding-top: rem(287);
+  padding-bottom: rem(700);
 
   @media (max-width: 991.98px) {
-    padding: rem(180) 0 rem(600);
+    padding-top: rem(180);
   }
 
   @media (max-width: 767.98px) {
-    padding: rem(130) 0 rem(600);
+    padding-top: rem(130);
   }
 
   &__container-2 {
@@ -37,12 +38,12 @@
     text-transform: uppercase;
     color: var(--color-accent);
     position: relative;
-    padding-left: em(104, 18);
+    padding-left: em(96, 18);
 
     &:not(:last-child) {
       margin-bottom: em(32, 18);
 
-      @media (max-width: 767.98px) {
+      @media (max-width: 599.98px) {
         margin-bottom: em(15, 14);
       }
     }
@@ -56,32 +57,23 @@
       width: em(72, 18);
       height: em(2, 18);
       background-color: var(--color-accent);
-    }
 
-    @media (max-width: 1199.98px) {
-      font-size: rem(16);
-      padding-left: em(74, 18);
-
-      &::before {
-        width: em(44, 16);
+      @media (max-width: 599.98px) {
+        width: em(36, 16);
       }
     }
 
     @media (max-width: 991.98px) {
-      font-size: rem(14);
+      font-size: rem(16);
     }
 
     @media (max-width: 599.98px) {
-      padding-left: em(52, 18);
-      letter-spacing: em(4, 14);
-
-      &::before {
-        width: em(32, 16);
-      }
+      font-size: rem(14);
+      padding-left: em(50, 14);
     }
 
     @media (max-width: 379.98px) {
-      letter-spacing: em(2, 14);
+      letter-spacing: em(3, 16);
     }
   }
   &__title {

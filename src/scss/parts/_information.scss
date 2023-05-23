@@ -1,0 +1,37 @@
+.information {
+  padding: rem(30) 0 rem(125);
+
+  @media (max-width: 991.98px) {
+    padding: rem(30) 0 rem(90);
+  }
+
+  @media (max-width: 767.98px) {
+    padding: rem(30) 0 rem(40);
+  }
+
+  &__container-1 {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 767.98px) {
+      justify-content: center;
+      flex-direction: column-reverse;
+    }
+  }
+  &__media {
+    flex: 0 1 50%;
+
+    img {
+      max-width: 100%;
+    }
+  }
+  &__block {
+    flex: 0 1 50%;
+    padding-left: rem(30);
+
+    @media (max-width: 767.98px) {
+      padding-left: 0;
+      margin-bottom: rem(20);
+    }
+  }
+}
