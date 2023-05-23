@@ -77,10 +77,11 @@
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 2;
   transition: background-color 0.3s ease-in-out;
 
   &.header-fix {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.9);
   }
 
   &.header-fix &__container-2 {
@@ -93,7 +94,6 @@
     justify-content: space-between;
     min-height: rem(156);
     transition: min-height 0.3s ease-in-out;
-    position: relative;
 
     @media (max-width: 991.98px) {
       min-height: rem(100);
@@ -107,16 +107,11 @@
     position: relative;
     z-index: 3;
   }
-  &__nav {
-  }
-  &__search {
-  }
 }
 
 .navbar {
   @media (max-width: 767.98px) {
     position: fixed;
-    // position: absolute;
     top: 0;
     left: -100%;
     width: 100%;
@@ -154,8 +149,6 @@
       flex-direction: column;
       align-items: start;
     }
-  }
-  &__item {
   }
   &__link {
     font-size: rem(18);
@@ -232,16 +225,5 @@
         width: rem(100);
       }
     }
-  }
-}
-
-@keyframes headerScroll {
-  0% {
-    opacity: 0;
-    top: rem(-70);
-  }
-  100% {
-    opacity: 1;
-    top: 0;
   }
 }

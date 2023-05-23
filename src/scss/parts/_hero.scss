@@ -1,0 +1,225 @@
+.hero {
+  padding: rem(287) 0 rem(731);
+
+  @media (max-width: 991.98px) {
+    padding: rem(180) 0 rem(600);
+  }
+
+  @media (max-width: 767.98px) {
+    padding: rem(130) 0 rem(600);
+  }
+
+  &__container-2 {
+    position: relative;
+  }
+  &__content {
+    max-width: rem(950);
+    margin: 0 auto;
+
+    @media (max-width: 1199.98px) {
+      max-width: rem(640);
+    }
+
+    @media (max-width: 991.98px) {
+      max-width: rem(510);
+    }
+
+    @media (max-width: 599.98px) {
+      max-width: rem(360);
+    }
+  }
+  &__uptitle {
+    display: inline-block;
+    font-weight: 700;
+    font-size: rem(18);
+    line-height: lh(25, 18);
+    letter-spacing: em(6, 18);
+    text-transform: uppercase;
+    color: var(--color-accent);
+    position: relative;
+    padding-left: em(104, 18);
+
+    &:not(:last-child) {
+      margin-bottom: em(32, 18);
+
+      @media (max-width: 767.98px) {
+        margin-bottom: em(15, 14);
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: em(72, 18);
+      height: em(2, 18);
+      background-color: var(--color-accent);
+    }
+
+    @media (max-width: 1199.98px) {
+      font-size: rem(16);
+      padding-left: em(74, 18);
+
+      &::before {
+        width: em(44, 16);
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      font-size: rem(14);
+    }
+
+    @media (max-width: 599.98px) {
+      padding-left: em(52, 18);
+      letter-spacing: em(4, 14);
+
+      &::before {
+        width: em(32, 16);
+      }
+    }
+
+    @media (max-width: 379.98px) {
+      letter-spacing: em(2, 14);
+    }
+  }
+  &__title {
+    font-size: rem(96);
+    line-height: lh(100, 96);
+    text-transform: capitalize;
+
+    &:not(:last-child) {
+      margin-bottom: em(125, 96);
+
+      @media (max-width: 767.98px) {
+        margin-bottom: em(30, 48);
+      }
+    }
+
+    span {
+      font-weight: 700;
+    }
+
+    @media (max-width: 1199.98px) {
+      font-size: rem(64);
+    }
+
+    @media (max-width: 991.98px) {
+      font-size: rem(52);
+    }
+
+    @media (max-width: 767.98px) {
+      font-size: rem(48);
+    }
+
+    @media (max-width: 599.98px) {
+      font-size: rem(36);
+    }
+
+    @media (max-width: 379.98px) {
+      font-size: rem(28);
+    }
+  }
+  &__actions {
+    text-align: center;
+  }
+  &__scroll {
+    background: none;
+    color: inherit;
+    font-weight: 600;
+    font-size: rem(18);
+    line-height: lh(25, 18);
+    display: inline-flex;
+    align-items: center;
+    column-gap: em(9, 18);
+    transition: color 0.3s ease-in-out;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--color-accent);
+      }
+      &:hover svg {
+        fill: var(--color-accent);
+      }
+    }
+
+    &:focus-visible {
+      outline: em(1, 18) solid var(--color-accent);
+      border-radius: em(5, 18);
+    }
+
+    svg {
+      width: em(16, 18);
+      height: em(24, 18);
+      fill: var(--color-light);
+      transition: fill 0.3s ease-in-out;
+    }
+  }
+}
+.socials-hero {
+  position: absolute;
+  left: rem(15);
+  top: rem(150);
+
+  @media (max-width: 991.98px) {
+    top: rem(130);
+  }
+
+  @media (max-width: 767.98px) {
+    position: relative;
+    display: flex;
+    gap: rem(15);
+    align-items: center;
+    top: 0;
+    left: 0;
+
+    &:not(:last-child) {
+      margin-bottom: rem(100);
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    transform: rotate(90deg) translate(-50px, 28px);
+    user-select: none;
+    font-size: rem(18);
+    line-height: lh(25, 18);
+    font-weight: 600;
+
+    @media (max-width: 767.98px) {
+      transform: rotate(0) translate(0, 0);
+    }
+  }
+  &__icons {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: rem(20);
+
+    @media (max-width: 767.98px) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  &__icon {
+    @media (any-hover: hover) {
+      &:hover svg {
+        fill: var(--color-accent);
+      }
+    }
+
+    &:focus-visible {
+      outline: em(1, 18) solid var(--color-accent);
+      border-radius: em(5, 18);
+      padding: rem(2);
+    }
+
+    svg {
+      max-width: rem(20);
+      max-height: rem(23);
+      fill: var(--color-light);
+      transition: fill 0.3s ease-in-out;
+    }
+  }
+}
