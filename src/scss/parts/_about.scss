@@ -1,0 +1,115 @@
+.about {
+  padding-top: rem(30);
+  padding-bottom: rem(220);
+
+  @media (max-width: 1199.98px) {
+    padding-bottom: rem(150);
+  }
+
+  @media (max-width: 991.98px) {
+    padding-bottom: rem(80);
+  }
+
+  @media (max-width: 767.98px) {
+    padding-bottom: rem(50);
+  }
+
+  &__container-1 {
+    @media (max-width: 1199.98px) {
+      margin: 0 -15px;
+    }
+  }
+  &__swiper {
+    width: 100%;
+  }
+}
+
+.swiper-about {
+  position: relative;
+
+  &__arrow {
+    background-color: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    position: absolute;
+    width: rem(40);
+    height: rem(40);
+    border-radius: 50%;
+    z-index: 3;
+    top: 50%;
+    transition: background-color 0.3s ease-in-out;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    &:focus-visible {
+      outline: em(2, 18) solid var(--color-accent);
+    }
+
+    svg {
+      width: rem(12);
+      height: rem(21);
+      fill: var(--color-light);
+    }
+
+    &_prev {
+      left: rem(30);
+      transform: rotate(180deg) translateY(50%);
+    }
+    &_next {
+      right: rem(30);
+      transform: translateY(-50%);
+    }
+
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+  }
+}
+
+.swiper-slide {
+  width: 100%;
+  padding: rem(535) rem(10) rem(40);
+
+  @media (max-width: 1199.98px) {
+    padding: rem(400) rem(10) rem(40);
+  }
+
+  @media (max-width: 991.98px) {
+    padding: rem(300) rem(10) rem(30);
+  }
+
+  @media (max-width: 767.98px) {
+    padding: rem(150) rem(10) rem(20);
+  }
+
+  @media (max-width: 424.98px) {
+    padding: rem(100) rem(10) rem(20);
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @media (max-width: 767.98px) {
+      filter: opacity(0.6);
+    }
+  }
+
+  &__block {
+    position: relative;
+    z-index: 2;
+    max-width: rem(934);
+    margin: 0 auto;
+    text-align: center;
+  }
+}

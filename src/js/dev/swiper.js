@@ -1,74 +1,31 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Autoplay, EffectCoverflow } from 'swiper';
 
 export const swiper = () => {
-  const swiper_1 = new Swiper('.swiper', {
-    modules: [Navigation, Pagination],
+  const swiperAbout = new Swiper('.swiper-about', {
+    modules: [Navigation, Autoplay, EffectCoverflow],
 
     loop: true,
     autoHeight: true,
     slidesPerView: 1,
-    // slidesPerView: 'auto',
-    // spaceBetween: 30,
-    // centeredSlides: true,
-    // freeMode: true,
-    // mousewheel: true,
-    // grabCursor: true,
-    // effect: 'fade',
-    // fadeEffect: {
-    //   crossFade: true,
-    // },
-    // effect: 'coverflow',
-    // coverflowEffect: {
-    //   rotate: 0,
-    //   stretch: 0,
-    //   depth: 100,
-    //   modifier: 3,
-    //   slideShadows: true
-    // },
-    // effect: 'creative',
+    spaceBetween: 15,
+    grabCursor: true,
+    effect: 'coverflow',
+    coverflowEffect: {
+      rotate: 20,
+      stretch: 2,
+      depth: 100,
+      modifier: 3,
+      slideShadows: true,
+    },
 
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
-
-    // grid: {
-    //   rows: 2,
-    // },
-
-    pagination: {
-      el: '.swiper-main__pagination',
-
-      // Is clickable
-      clickable: true,
-
-      // Animation
-      // dynamicBullets: true,
-
-      // Numbers
-      // type: 'fraction',
-
-      // Custom bullet with number
-      // renderBullet: function (index, className) {
-      //   return '<span class="' + className + '">' + (index + 1) + "</span>";
-      // },
+    autoplay: {
+      delay: 10000,
+      disableOnInteraction: false,
     },
 
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-about__arrow_next',
+      prevEl: '.swiper-about__arrow_prev',
     },
-
-    scrollbar: {
-      el: '.swiper-scrollbar',
-      hide: true,
-    },
-
-    // breakpoints: {
-    //   767: {
-    //     slidesPerView: 2,
-    //     spaceBetween: 20,
-    //   },
-    // },
   });
 };

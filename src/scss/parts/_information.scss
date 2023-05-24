@@ -1,12 +1,17 @@
 .information {
-  padding: rem(30) 0 rem(125);
+  padding-top: rem(30);
+  padding-bottom: rem(220);
+
+  @media (max-width: 1199.98px) {
+    padding-bottom: rem(150);
+  }
 
   @media (max-width: 991.98px) {
-    padding: rem(30) 0 rem(90);
+    padding-bottom: rem(80);
   }
 
   @media (max-width: 767.98px) {
-    padding: rem(30) 0 rem(40);
+    padding-bottom: rem(50);
   }
 
   &__container-1 {
