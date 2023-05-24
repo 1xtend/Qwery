@@ -37,6 +37,23 @@
 //!---------GLOBAL STYLES-----------------------------------------------------------------------------*/
 /*====================================================================================================*/
 
+html {
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+  scrollbar-width: 12px;
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--color-dark);
+  }
+
+  scrollbar-color: var(--color-accent) var(--color-dark);
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-accent);
+  }
+}
+
 body {
   font-family: $primary-family;
   color: var(--color-light);
