@@ -165,8 +165,7 @@
       height: em(1, 18);
       background-color: var(--color-accent);
       bottom: em(-4, 18);
-      left: 50%;
-      transform: translateX(-50%);
+      left: 0;
       transition: width 0.3s ease-in-out;
     }
 
