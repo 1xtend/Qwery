@@ -78,3 +78,16 @@ import { headerFix } from './dev/headerFix.js';
 headerFix();
 
 /*====================================================================================================*/
+
+function pageReloading() {
+  const logos = document.querySelectorAll('.logo');
+
+  logos.forEach((logo) => {
+    logo.addEventListener('click', (e) => {
+      e.preventDefault();
+      location.reload();
+    });
+  });
+}
+
+pageReloading();
