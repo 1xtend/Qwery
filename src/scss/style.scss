@@ -61,13 +61,13 @@ body {
   background: url('@img/main-bg.png') top center no-repeat;
 }
 
-[class*='__container-1'] {
+[class*='__container-thin'] {
   max-width: $container1;
   padding: 0 $containerPadding;
   margin: 0 auto;
 }
 
-[class*='__container-2'] {
+[class*='__container-wide'] {
   max-width: $container2;
   padding: 0 $containerPadding;
   margin: 0 auto;

@@ -84,11 +84,11 @@
     background-color: rgba(0, 0, 0, 0.9);
   }
 
-  &.header-fix &__container-2 {
+  &.header-fix &__container-wide {
     min-height: rem(60);
   }
 
-  &__container-2 {
+  &__container-wide {
     display: flex;
     align-items: center;
     justify-content: space-between;
