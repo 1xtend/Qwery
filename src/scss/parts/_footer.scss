@@ -113,7 +113,7 @@
 
     @media (max-width: 479.98px) {
       grid-template-columns: repeat(2, 1fr);
-      justify-items: start;
+      justify-items: flex-start;
       gap: rem(20);
     }
 
